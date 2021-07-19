@@ -47,7 +47,7 @@
     <section class="jumbotron text-center">
       <img src="assets/img/a02b2594230e36baa206047e006307a4 Cropped.jpg" alt="Windu M Bagus" width="200" class="rounded-circle img-thumbnail" />
       <h1 class="display-4">Windu Muhammad Bagus</h1>
-      <p class="lead">Web Application Developer | System Engineer</p>
+      <p class="lead"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -66,7 +66,7 @@
         </div>
         <div class="row justify-content-center fs-5">
           <div class="col-md-6">
-            <img src="assets/img/a02b2594230e36baa206047e006307a4 Cropped.jpg" alt="Windu M Bagus" width="140" class="rounded mx-auto d-block mb-3" />
+            <img src="assets/img/Pas Foto.jpg" alt="Windu M Bagus" width="140" class="rounded mx-auto d-block mb-3" />
             <h4 class="text-center">Who's this guy ?</h4>
             <p class=" justify-content-between">
               I’m an experienced Web Developer for two years, using PHP with Laravel Framework. Who still wants to continue to develop my abilities to know more about PHP Framework. <br>
@@ -147,15 +147,13 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-4 mb-3">
-            <div class="card" >
+            <div class="card">
               <img src="assets/img/ACCONE-1.gif" class="card-img-top" alt="" />
               <div class="card-body">
                 <h4 class="card-title">ACCONE CMS</h4>
                 <p class="card-text">acc.one is a one-stop financing solution offering a seamless and personalized customer experience in financing products and services. This web application support from admin side.</p>
               </div>
-              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject1" style="background-color: #184e77;"> 
-                See Details
-              </button>
+              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject1" style="background-color: #184e77">See Details</button>
             </div>
           </div>
           <div class="col-md-4 mb-3">
@@ -165,9 +163,7 @@
                 <h4 class="card-title">Leads Time</h4>
                 <p class="card-text">Leads Time is a web application for monitoring submissions to the astra credit company</p>
               </div>
-              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject2" style="background-color: #184e77;"> 
-                See Details
-              </button>
+              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject2" style="background-color: #184e77">See Details</button>
             </div>
           </div>
           <div class="col-md-4 mb-3">
@@ -175,11 +171,12 @@
               <img src="assets/img/amora-1.gif" class="card-img-top" alt="" />
               <div class="card-body">
                 <h4 class="card-title">AMORA</h4>
-                <p class="card-text">AMORA is a web application created to display all lists of APIs that can be used by companies that will cooperate with astra credit companies. Besides that AMORA can also be used for KPI assessment or Gamification for developers and BSA.</p>
+                <p class="card-text">
+                  AMORA is a web application created to display all lists of APIs that can be used by companies that will cooperate with astra credit companies. Besides that AMORA can also be used for KPI assessment or Gamification for
+                  developers and BSA.
+                </p>
               </div>
-              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject3" style="background-color: #184e77;"> 
-                See Details
-              </button>
+              <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalProject3" style="background-color: #184e77">See Details</button>
             </div>
           </div>
           <!-- <div class="col-md-4 mb-3">
@@ -242,6 +239,16 @@
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 4, delay: 0.5, text: "Web Application Developer | System Engineer" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+    </script>
+
     <script>
       $(".navbar a").on("click", function () {
         $(".navbar").find(".active").removeClass("active");
@@ -314,7 +321,10 @@
         <div class="modal-body">
           <img src="assets/img/amora-1.gif" class="card-img-top" alt="" />
           <h4>AMORA</h4>
-          <p>AMORA is a web application created to display all lists of APIs that can be used by companies that will cooperate with astra credit companies. Besides that AMORA can also be used for KPI assessment or Gamification for developers and BSA.</p>
+          <p>
+            AMORA is a web application created to display all lists of APIs that can be used by companies that will cooperate with astra credit companies. Besides that AMORA can also be used for KPI assessment or Gamification for developers
+            and BSA.
+          </p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -322,5 +332,4 @@
       </div>
     </div>
   </div>
-
 </html>
